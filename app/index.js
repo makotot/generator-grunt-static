@@ -68,6 +68,10 @@ var GruntStaticGenerator = yeoman.generators.Base.extend({
   },
 
   end: function () {
+    this.npm();
+    this.bower();
+  },
+  npm: function () {
     var done = this.async();
 
     this.npmInstall([
@@ -82,6 +86,15 @@ var GruntStaticGenerator = yeoman.generators.Base.extend({
       'grunt-contrib-clean',
       'grunt-contrib-copy'
     ], {'saveDev': true}, done);
+  },
+  bower: function () {
+    var done = this.async();
+
+    this.bowerInstall([
+      'normalize-css'
+    ], {
+      'saveDev': true
+    }, done);
   }
 });
 
