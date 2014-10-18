@@ -56,6 +56,8 @@ var GruntStaticGenerator = yeoman.generators.Base.extend({
 
       this.template('src/_default.hbs', 'src/layouts/default.hbs');
       this.src.copy('src/_index.hbs', 'src/pages/index.hbs');
+      this.src.copy('src/_header.hbs', 'src/partials/header.hbs');
+      this.src.copy('src/_footer.hbs', 'src/partials/footer.hbs');
       this.src.copy('src/_main.scss', 'src/scss/main.scss');
       this.src.copy('src/_base.scss', 'src/scss/base/_base.scss');
     },
