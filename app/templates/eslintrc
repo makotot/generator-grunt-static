@@ -9,7 +9,8 @@
     "jQuery": false,
     "_": true,
     "Backbone": false,
-    "alert": false
+    "alert": false,
+    "angular": false
   },
   "rules": {
     "quotes": [1, "single"],
@@ -30,6 +31,7 @@
     "no-mixed-requires": [1, true],
     "eol-last": [0],
     "no-bitwise": [1],
-    "dot-notation": [1]
+    "dot-notation": [1],
+    "no-wrap-func": [1]
   }
 }
